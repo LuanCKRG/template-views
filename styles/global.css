@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+:root {
+  /* FONTE */
+  --font:'Inter', sans-serif;
+
+  /* HEADER */
+  --black: #000000;
+  --white: #FFFFFF;
+  --orange-primary:#FF6600;
+}
