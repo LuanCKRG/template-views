@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+
+    /* FONTE */
+    --font:'Inter', sans-serif;
+
+    /* HEADER */
+    --bghd: black;
+    --clhd: white;
+    --Car:#FF6600;
+
+
+}
+
+body {
+    font-family: var(--font);
+    width: 97.4%;
+}
+
+#menu {
+    display: flex;
+    font-size: 40px;
+    color: var(--clhd);
+}
+
+header {
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--bghd);
+    color: var(--clhd);
+    justify-content: space-between;
+    padding: 20px 10px;
+    width: 100%;
+    text-indent: 25px;
+}
+
+header h1 {
+    font-size: 25px;
+    padding-right: 20px;
+}
+
+header > h1 > span:nth-child(2) {
+    margin-left: -6px;
+    color: var(--Car);
+}
