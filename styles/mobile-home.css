@@ -1,33 +1,11 @@
 @charset "UTF-8";
 
-* {
-    margin: 0;
-    padding: 0;
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
-:root {
-
-    /* FONTE */
-    --font:'Inter', sans-serif;
-
-    /* GLOBAIS */
-    --preto: black;
-    --branco: white;
-
-    /* HEADER */
-    --Car:#FF6600;
-
-    /* MAIN */
-    --Gray: #d9d9d9;
-    --Red: #ff0000;
-
-}
 
 body {
     font-family: var(--font);
-    width: 97.4%;
+    width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -39,14 +17,14 @@ a {
 #menu {
     display: flex;
     font-size: 40px;
-    color: var(--branco);
+    color: var(--white);
 }
 
 header {
     display: flex;
     align-items: center;
-    background-color: var(--preto);
-    color: var(--branco);
+    background-color: var(--black);
+    color: var(--white);
     justify-content: space-between;
     padding: 20px 10px;
     width: 100%;
@@ -60,7 +38,7 @@ header h1 {
 
 header > h1 > span:nth-child(2) {
     margin-left: -6px;  
-    color: var(--Car);
+    color: var(--orange-primary);
 }
 
 section#welcome {
@@ -91,7 +69,7 @@ section#welcome {
 }
 
 #welcome span:nth-child(3) {
-    color: var(--Car);
+    color: var(--orange-primary);
     margin-left: -6px;
 }
 
@@ -100,7 +78,7 @@ section#welcome {
     font-size: 22px;
     font-weight: bold;
     text-decoration: underline;
-    text-decoration-color: var(--Car);
+    text-decoration-color: var(--orange-primary);
     text-decoration-thickness: 3px;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -110,71 +88,27 @@ section#welcome {
 /* ------------ MAIS POPULARES -------- */
 
 #popular {
-    background-color: var(--preto);
+    background-color: var(--black);
 }
 
 #popular h2 {
-    color: var(--branco);
+    color: var(--white);
     text-align: center;
     padding: 10px;
-    margin-bottom: 50px;
 }
 
-#divs {
-    display: flex;
-    flex-direction: column;
+#popular h3 {
+    color: white;
+    font-style: italic;
+    padding-bottom: 10px;
+    text-align: center;
 }
 
-.red2 {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 200px;
+#eletro h2, h3 {
+    text-align: center;
+    padding: 10px 0;
 }
 
-.red2-1 {
-    width: 100px;
-    background-color: var(--Red);
-}
-
-.red2-2 {
-    width: 100px;
-    background-color: var(--Red);
-}
-
-.gray {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 200px;
-    margin-top: -215px;
-}
-
-.gray1-1 {
-    background-color: var(--Gray);
-    width: 150px;
-    margin-left: 15px;
-}
-
-.gray1-2 {
-    background-color: var(--Gray);
-    width: 100px;
-    margin-right: 15px;
-    padding-left: 50px;
-}
-
-.red1 {
-    display: flex;
-    justify-content: flex-start;
-    width: 100%;
-    height: 200px;
-    margin-left: 102px;
-    margin-top: -220px;
-    margin-bottom: 200px;
-}
-
-.red1-1 {
-    background-color: var(--Red);
-    width: 130px;
-    padding: 0 20px;
+#eletro h3 {
+    font-style: italic;
 }
