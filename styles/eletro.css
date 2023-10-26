@@ -39,7 +39,10 @@ header > h1 > span:nth-child(2) {
     color: var(--orange-primary);
 }
 
-main {
+main h2{
+    margin: 30px 0;
+    text-align: center;
+    font-weight: bolder;
 }
 
 #search-wapper {
@@ -48,14 +51,46 @@ main {
 }
 
 #search {
-    display: inline-block;
+    display: flex;
     justify-content: center;
     border: 2px solid black;
+    border-radius: 30px;
+    padding: 7px;
 }
 
-input {
+input[type="search"] {
     border: none;
-    height: 100%;
+    border-radius: 7px;
+    width: 290px;
+}
+
+input[type="search"]::placeholder {
+    color: var(--Ph);
+}
+
+#search span {
+    padding: 0px 8px 1px 0px;
+}
+
+#filters h3 {
+    font-weight: bolder;
+}
+
+#theme{
+    display: flex;
+    gap: 10px;
 }
 
 
+.box {
+    display: inline-block;
+    background-color: var(--black);
+    color: var(--white);
+    padding: 2px 6px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#theme > p:nth-child(2) {
+    padding: 2px 19px;
+}
